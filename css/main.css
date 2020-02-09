@@ -1,0 +1,317 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Open Sans';
+	color: #000;
+	font-size: 15px;
+}
+
+ul, li {
+	display: block;
+}
+
+h1 {
+	font-size: 30px;
+}
+
+p {
+	font-size: 15px;
+	text-align: center;
+	
+}
+
+h1,h2,h3 {
+	text-align: center;
+}
+
+header {
+	max-width: 1200px;
+	width: 100%;
+	margin: auto;
+	position: relative;
+	height: 120px;
+	line-height: 120px;
+}
+
+.menu {
+	font-weight: 600;
+	display: flex;
+	justify-content: flex-end;
+	
+}
+
+.menu__link {
+	text-decoration: none;
+	font-size: 20px;
+	color: #000;
+	margin-left: 40px;
+}
+
+.menu__item {
+	margin-left: 20px;
+
+}
+
+.logo__block {
+	position: absolute;
+	left: 0;
+}
+
+.logo {
+	font-weight: 700;
+	font-size: 25px;
+	text-decoration: none;
+	color: #000;
+}
+
+.intro {
+	color: #fff;
+	width: 100%;
+	margin: auto;
+	background: url("../img/intro-back.png");
+	height: 910px;
+	background-size: cover;
+	position: relative;
+}
+
+.intro__block {
+	padding-top: 310px;	
+
+}
+
+.intro__title {
+	font-size: 60px;
+}
+
+.intro__text {
+	text-align: center;
+	font-family: 'Roboto';
+	font-size: 20px;
+}
+
+.intro__icon {
+	position: absolute;
+	bottom: 50px;
+	right: 46%;
+	font-size: 50px;
+
+}
+
+.btn {
+	cursor: pointer;
+	background: rgba(255, 255, 255, 0);
+	margin: 30px;
+	font-family: 'Roboto';
+	font-size: 20px;
+	text-transform: uppercase;
+}
+
+.btn__block {
+	color: #fff;
+	margin-top: 170px;
+	padding-left: 70px;
+	display: flex;
+	justify-content: center;
+}
+
+.intro__service__btn {
+	color: #fff;
+	width: 220px;
+	height: 70px;
+	border: 2px solid #fff;
+}
+
+.intro__service__btn:hover {
+	background: #00897b;
+	border: #00897b 2px solid;
+	transition: all 1s;
+}
+
+.intro__hire__btn {
+	color: #fff;
+	width: 220px;
+	height: 70px;
+	background: #00897b;
+	border: #00897b 2px solid;
+}
+
+.intro__hire__btn:hover {
+	border: 2px solid #fff;
+	background: rgba(255, 255, 255, 0);
+	transition: all 1s;
+}
+
+
+.about {
+	max-width: 1400px;
+	width: 100%;
+	margin: auto;
+	height: 670px;
+}
+
+.about__intro {
+	padding-top: 120px;
+	width: 640px;
+	margin: auto;
+}
+
+.about__text {
+	margin-top: 20px;
+	
+}
+
+.about__block {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 100px;	
+}
+
+.about__item {
+	width: 270px;
+	height: 230px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.about__item__icon {
+	width: 64px;
+	height: 63px;
+}
+
+.about__item__title {
+	font-size: 20px;
+	font-weight: 600;
+	margin-top: 20px;
+}
+
+.about__item__text {
+	font-weight: 300;
+	margin-top: 30px;
+	text-align: center;	
+}
+
+.service {
+	background: #e4fdf9;
+	height: 1400px;
+}
+
+.service__intro {
+	padding-top: 120px;
+	width: 640px;
+	margin: auto;
+}
+
+.service__text {
+	margin-top: 20px;
+}
+
+.service__block {
+	padding-top: 80px;
+	max-width: 1160px;
+	margin: auto;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.service__item {
+	cursor: pointer;
+	align-items: center;
+	width: 340px;
+	height: 440px;
+	background: #fff;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.service__item:hover {
+	background: #00897b;
+	color: #fff;
+	transition: all 0.8s;
+}
+
+.service__item__icon {
+	padding-top: 60px;
+	height: 63px;
+	width: 63px;
+}
+
+.service__item__title {
+	padding-top: 20px;
+}
+
+.service__item__text {
+	padding-top: 30px;
+}
+
+.service__item__btn {
+	width: 150px;
+	height: 50px;
+	border: 2px solid #000;
+}
+
+.service__item__btn:hover {
+	border: 2px solid #fff;
+	color: #fff;
+	transition: all 0.5s;
+
+}
+
+.work {
+	height: 1600px;
+
+}
+
+.work__intro {
+	padding-top: 120px;
+	width: 640px;
+	margin: auto;
+}
+
+.work__text {
+	margin-top: 20px;
+}
+
+.work__block1 {
+	padding-top: 80px;
+	max-width: 750px;
+	width: 100%;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+.work__cat {
+	width: 180px;
+	height: 55px;
+	border: 2px solid #00897b;
+	font-size: 20px;
+	font-weight: 600;
+	text-align: center;
+}
+
+.work__block2 {
+	margin: auto;
+	width: 1200px;
+	display: flex;
+	justify-content: center;
+}
+
+.work__item {
+	margin: 10px;
+	height: 296px;
+	width: 296px;
+}
+
+.price {
+	height: 1140px;
+}
+
+.price__intro {
+	padding-top: 120px;
+}
