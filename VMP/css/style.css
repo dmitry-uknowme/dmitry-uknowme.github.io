@@ -1,0 +1,138 @@
+body {
+	font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 2.142;
+    font-family: Montserrat,sans-serif;
+    letter-spacing: 0;
+    text-align: left;
+    color: #3b3d42;
+}
+
+header {
+		
+}
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+ul, li {
+	display: block;
+}
+
+h1, h2, h3 {
+	text-align: center;
+}
+
+.container {
+	max-width: 80%;
+	margin: auto;
+}
+
+.feedback {
+	font-size: 16px;
+	line-height: 80px;
+	height: 80px;
+	background: #000;
+	color: #fff;
+}
+
+.feedback_contacts {
+	display: flex;
+	justify-content: flex-start;
+}
+
+.feedback_socnets {
+	display: flex;
+	justify-content: flex-end;
+	margin-top: -50px;
+	padding-top: 0;
+}
+
+.fa-facebook {
+	margin-left: 30px;
+}
+
+.fa-twitter {
+	margin-left: 30px;
+}
+
+.fa-instagram {
+	margin-left: 30px;
+}
+
+.fa-youtube {
+	margin-left: 30px;
+}
+
+.mobile {
+	margin-left: 40px;
+}
+
+.mail {
+	margin-left: 40px;
+}
+
+.address {
+	margin-left: 40px;
+}
+
+.header_menu {
+	line-height: 130px;
+	height: 130px;
+	background: #2d3034;
+}
+
+.menu_list {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.menu_link {
+	margin-left: 60px;
+	color: #fff;
+	font-size: 17px;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+.menu_link:hover {
+	color: #f7992b;
+}
+
+.intro {
+	background: #ffca85;
+}
+
+.intro_btn {
+	background: #ffca85;
+	width: 300px;
+	margin: auto;
+	border: 2px solid #2d3034;
+	border-radius: 20px;
+	font-size: 30px; 
+}
+
+.intro_img {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	color: #fff;
+	background: url('../img/back.jpeg');
+	background-size: cover;
+	height: 800px;
+	padding-top: 300px;
+}
+
+.intro_title {
+	font-size: 80px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.intro_text {
+	font-size: 38px;
+	font-weight: 300;
+}
