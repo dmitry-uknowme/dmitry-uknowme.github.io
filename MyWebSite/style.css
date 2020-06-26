@@ -70,13 +70,15 @@ body {
 }
 
 
-.fas  {
-  position: relative;
+.fa-angle-double-down {
+  position: absolute;
+  bottom: 100px;
+  right: 50%;
   /*margin-top: 200px;*/
   z-index: 6;
   margin: auto;
   color: #fff;
-  font-size: 2rem;
+  font-size: 5rem;
 }
 
 
@@ -98,7 +100,7 @@ body {
   }
 
   50% {
-    transform: translateY(100px);
+    transform: translateY(0px);
   }
 }
 
@@ -120,17 +122,17 @@ body {
   }
 
   50% {
-    transform: translateY(-100px);
+    transform: translateY(0px);
   }
 }
 
 
 #up_to_down {
-  animation: uptodown 2s ease 1s infinite; 
+  animation: uptodown 3s ease 1s infinite; 
 }
 
 #down_to_up {
-  animation: downtoup 2s ease 1s infinite; 
+  animation: downtoup 3s ease 1s infinite; 
 }
 
 
