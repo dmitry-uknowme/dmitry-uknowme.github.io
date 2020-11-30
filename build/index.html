@@ -8,10 +8,10 @@
 	<meta name="description" content="Startup HTML template OptimizedHTML 5">
 	<meta name="viewport" content="width=device-width">
 	<link rel="icon" href="img/favicon.png">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
+	<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"> -->
 	<link href="css/main.min.css" rel="stylesheet" />
-	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+	<!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script> -->
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 
 </head>
@@ -20,11 +20,37 @@
 	<div class="body__overlay">
 		<div class="body__container">
 			<header class="header">
-				<div class="header__address">Стерлитамак, <br> ул. Профсоюзная 2к1</div>
-				<img class="header__logo" src="./img/logo.png">
+				<a class="header__logo" href="./">
+					<img src="./img/header/header__logo.png" alt="Логотип">
+				</a>
+				<nav class="header__nav">
+					<ul class="header__menu">
+						<li class="header__menuItem">
+							<a class="header__menuLink" href="./">Главная</a>
+						</li>
+						<li class="header__menuItem">
+							<a class="header__menuLink" href="./">Наши проекты</a>
+						</li>
+						<li class="header__menuItem">
+							<a class="header__menuLink" href="./">Отзывы</a>
+						</li>
+						<li class="header__menuItem">
+							<a class="header__menuLink" href="./">Этапы работ</a>
+						</li>
+					</ul>
+				</nav>
 				<div class="header__contacts">
-					<div class="header__contactsPhone">8-965-921-9000</div>
-					<div class="header__contactsText">Уже работаем!</div>
+					<div class="header__contactsAddress">
+						Стерлитамак, <br> ул. Профсоюзная 2к1
+					</div>
+					<div class="header__contactsPhone">
+						<div class="header__contactsPhoneText">
+							8-965-921-9000
+						</div>
+						<div class="header__contactsPhoneFreecall">
+							Бесплатный звонок!
+						</div>
+					</div>
 				</div>
 			</header>
 			<main class="main">
@@ -52,6 +78,7 @@
 					<div class="main__decor">
 						<img class="main__decorRight" src="./img/main/main__decorRight.png">
 						<img class="main__decorLeft" src="./img/main/main__decorLeft.png">
+					</div>
 				</div>
 			</main>
 			<section class="projects">
@@ -83,7 +110,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="projects__gallery">
+				<!-- <div class="projects__gallery">
 					<h2 class="projects__galleryTitle">Предлагаем вам посмотреть наши проекты</h2>
 					<div class="carousel slide projects__gallerySlider"  id="carouselExampleIndicators" data-ride="carousel">
 						<a class="projects__gallerySliderPrev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -116,6 +143,73 @@
 							<img src="./img/projects/projects__slider-right-arrow.png" alt="Вперед">
 						</a>
 					  </div>
+				</div> -->
+			</section>
+
+			<section class="gallery">
+				<div class="gallery__row">
+					<div class="gallery__unselectedImages">
+						<div class="gallery__unselectedImagesRow">
+							<img class="gallery__unselectedImagesItem" src="./img/gallery/gallery__img2.png">
+							<img class="gallery__unselectedImagesItem" src="./img/gallery/gallery__img3.png">
+						</div>
+						<div class="gallery__unselectedImagesRow">
+							<img class="gallery__unselectedImagesItem" src="./img/gallery/gallery__img4.png">
+							<img class="gallery__unselectedImagesItem" src="./img/gallery/gallery__img5.png">
+						</div>
+						<div class="gallery__unselectedImagesRow">
+							<img class="gallery__unselectedImagesItem" src="./img/gallery/gallery__img6.png">
+							<img class="gallery__unselectedImagesItem" src="./img/gallery/gallery__img7.png">
+						</div>
+						<div class="gallery__unselectedImagesRow">
+							<img class="gallery__unselectedImagesItem" src="./img/gallery/gallery__img8.png">
+							<img class="gallery__unselectedImagesItem" src="./img/gallery/gallery__img9.png">
+						</div>
+					</div>
+					<div class="gallery__selectedImage">
+						<img class="gallery__selectedImageItem" src="./img/gallery/gallery__img1.png">
+						<div class="gallery__selectors">
+							<div class="gallery__selectorsRock">Каменные Дома</div>
+							<div class="gallery__selectorsWood">Деревянные Дома</div>
+						</div>
+					</div>
+					<div class="gallery__desc">
+						<div class="gallery__descRow">
+							<div class="gallery__descWorks">
+								<h3 class="gallery__descWorksTitle">Состав работ :</h3>
+								<p class="gallery__descWorksText">
+									Проектирование, <br>
+									поставка материалы, <br>
+									строительство под ключ <br>
+								</p>
+							</div>
+							<div class="gallery__descWorks">
+								<h3 class="gallery__descWorksTitle">Квадратура :</h3>
+								<p class="gallery__descWorksText">
+									204 кв/м
+								</p>
+							</div>
+						</div>
+						<div class="gallery__descRow">
+							<div class="gallery__descWorks">
+								<h3 class="gallery__descWorksTitle">Материалы :</h3>
+								<p class="gallery__descWorksText">
+									Материал 1, <br>
+									материал 2, <br>
+									материал 3 <br>
+								</p>
+							</div>
+							<div class="gallery__descWorksDeadline">
+								<h3 class="gallery__descWorksTitle">Сроки :</h3>
+								<p class="gallery__descWorksText">
+									2 месяца
+								</p>
+							</div>
+						</div>
+						<div class="center">
+							<button class="gallery__descBtn btn">Скачать проект</button>
+						</div>
+					</div>
 				</div>
 			</section>
 			
@@ -173,6 +267,9 @@
 							Как всё это сделали, начался процесс, и сам процесс шёл по времени примерно, как все работы которые я озвучила ранее. 
 							Ребята действительно молодцы, очень быстро и оперативно всё делают. Благодарю компанию Доступный дом, честно, огромный поклон.
 						</p>
+						<a class="feedback__reviewExpand">Посмотреть проект</a>
+						<img class="feedback__reviewUp" src="./img/feedback/feedback__up-arrow.png">
+						<img class="feedback__reviewDown" src="./img/feedback/feedback__up-arrow.png">
 					</div>
 				</div>
 			</section>
@@ -210,7 +307,7 @@
 				<form class="steps__form">
 					<div class="center">
 						<h2 class="steps__formTitle">
-							Узнайте о типичных лшибках заказчика при строительстве дома
+							Узнайте о типичных ошибках заказчика при строительстве дома
 						</h2>
 					</div>
 					<div class="center">
@@ -226,34 +323,45 @@
 					</div>
 				</form>
 			</section>
-		
+			
 			<section class="outro">
-				<h2 class="outro__title">Строительство домов под ключ</h2>
-				<p class="outro__text">
-					Мы строим под ключ комфортные дома и коттеджи в Стерлитамаке, и сдаем 
-					их заказчикам готовыми к проживанию. Мы познакомим вас с технологиями и материалами, 
-					которые используем в строительстве загородных домов. Вы узнаете все об их 
-					преимуществах, особенностях и важных нюансах.
-				</p>
-				<h2 class="outro__title">Строительство коттеджей под ключ в Стерлитамаке</h2>
-				<p class="outro__text">
-					За время работы мы построили и сдали заказчикам более 800 готовых для заселения домов. 
-					Мы строим загородные коттеджи по европейской технологии, соблюдая все требования 
-					СНиП и ГОСТ, заботимся о здоровье клиентов и применяем только сертифицированные, 
-					экологически безопасные материалы, не выделяющие формальдегиды.
-				</p>
-				<p class="outro__text">
-					Мы самостоятельно изготавливаем деревянные, металлические и железобетонные 
-					конструкции для каркасных домов на производственных площадках. 
-					У нас большой автопарк строительной техники и в наличии механизированное 
-					оборудование. В нашей компании работают талантливые инженеры, дизайнеры, и 
-					опытные мастера.
-				</p>
-				<p class="outro__text">
-					На каждом этапе работают специализированные бригады.
-					Благодаря комплексному подходу к строительству домов, мы снижаем затраты
-					и предлагаем клиентам невысокие цены.
-				</p>
+				<div class="outro__viewable">
+					<div class="center">
+						<button class="outro__viewableTitle">
+							Прочитать
+						</button>
+					</div>
+					<img class="outro__viewableVideo" src="./img/outro/outro__video.png">
+					<div class="outro__viewableDecor"></div>
+				</div>		
+				<div class="outro__readable">
+					<h2 class="outro__title">Строительство домов под ключ</h2>
+					<p class="outro__text">
+						Мы строим под ключ комфортные дома и коттеджи в Стерлитамаке, и сдаем 
+						их заказчикам готовыми к проживанию. Мы познакомим вас с технологиями и материалами, 
+						которые используем в строительстве загородных домов. Вы узнаете все об их 
+						преимуществах, особенностях и важных нюансах.
+					</p>
+					<h2 class="outro__title">Строительство коттеджей под ключ в Стерлитамаке</h2>
+					<p class="outro__text">
+						За время работы мы построили и сдали заказчикам более 800 готовых для заселения домов. 
+						Мы строим загородные коттеджи по европейской технологии, соблюдая все требования 
+						СНиП и ГОСТ, заботимся о здоровье клиентов и применяем только сертифицированные, 
+						экологически безопасные материалы, не выделяющие формальдегиды.
+					</p>
+					<p class="outro__text">
+						Мы самостоятельно изготавливаем деревянные, металлические и железобетонные 
+						конструкции для каркасных домов на производственных площадках. 
+						У нас большой автопарк строительной техники и в наличии механизированное 
+						оборудование. В нашей компании работают талантливые инженеры, дизайнеры, и 
+						опытные мастера.
+					</p>
+					<p class="outro__text">
+						На каждом этапе работают специализированные бригады.
+						Благодаря комплексному подходу к строительству домов, мы снижаем затраты
+						и предлагаем клиентам невысокие цены.
+					</p>
+				</div>
 			</section>
 		
 			<footer class="footer">
@@ -270,7 +378,7 @@
 			</footer>
 		</div>
 	</div>
-	<div class="modal__overlay">
+	<!-- <div class="modal__overlay">
 		<div class="modal">
 			<form class="modal__form">
 				<h2 class="modal__formTitle">
@@ -296,7 +404,7 @@
 			</form>
 			<div class="modal__close">&times;</div>
 		</div>
-	</div>
+	</div> -->
 
 
 	<script src="js/main.min.js"></script>
