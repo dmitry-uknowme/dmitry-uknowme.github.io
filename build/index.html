@@ -6,9 +6,9 @@
 	<meta charset="utf-8">
 	<title>Доступный дом</title>
 	<meta name="description" content="Startup HTML template OptimizedHTML 5">
-	<meta name="viewport" content="width=device-width">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
 	<link rel="icon" href="img/favicon.png">
-	<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"> -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
 	<link href="css/main.min.css" rel="stylesheet" />
 	<!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script> -->
@@ -19,98 +19,118 @@
 <body>
 	<div class="body__overlay">
 		<div class="body__container">
-			<header class="header">
-				<a class="header__logo" href="./">
-					<img src="./img/header/header__logo.png" alt="Логотип">
-				</a>
-				<nav class="header__nav">
-					<ul class="header__menu">
-						<li class="header__menuItem">
-							<a class="header__menuLink" href="./">Главная</a>
-						</li>
-						<li class="header__menuItem">
-							<a class="header__menuLink" href="./">Наши проекты</a>
-						</li>
-						<li class="header__menuItem">
-							<a class="header__menuLink" href="./">Отзывы</a>
-						</li>
-						<li class="header__menuItem">
-							<a class="header__menuLink" href="./">Этапы работ</a>
-						</li>
-					</ul>
-				</nav>
-				<div class="header__contacts">
-					<div class="header__contactsAddress">
-						Стерлитамак, <br> ул. Профсоюзная 2к1
-					</div>
-					<div class="header__contactsPhone">
-						<div class="header__contactsPhoneText">
-							8-965-921-9000
+			<header class="header anim anim-no-repeat">
+				<div class="container" style="display: flex; flex-wrap: wrap;">
+					<a class="header__logo" href="./">
+						<img class="header__logoImg" src="./img/header/header__logo.png" alt="Логотип">
+					</a>
+					<nav class="header__nav">
+						<ul class="header__menu">
+							<li class="header__menuItem">
+								<a class="header__menuLink" href="./">Главная</a>
+							</li>
+							<li class="header__menuItem">
+								<a class="header__menuLink" href="./">Наши проекты</a>
+							</li>
+							<li class="header__menuItem">
+								<a class="header__menuLink" href="./">Отзывы</a>
+							</li>
+							<li class="header__menuItem">
+								<a class="header__menuLink" href="./">Этапы работ</a>
+							</li>
+						</ul>
+					</nav>
+					<div class="header__contacts">
+						<div class="header__contactsAddress">
+							Стерлитамак, <br> ул. Профсоюзная 2к1
 						</div>
-						<div class="header__contactsPhoneFreecall">
-							Бесплатный звонок!
+						<div class="header__contactsPhone">
+							<div class="header__contactsPhoneText">
+								8-965-921-9000 
+							</div>
+							<div class="header__contactsPhoneFreecall">
+								Бесплатный звонок!
+							</div>
 						</div>
 					</div>
 				</div>
 			</header>
-			<main class="main">
-				<h1 class="main__title">Дом <span class="main__titleHighlight">с участком</span> по цене <br> квартиры <span class="main__titleHighlight">в</span> Стерлитамаке!</h1>
-				<div class="main__body">
-					<img class="main__house" src="./img/main/main__house.png">
-					<button class="main__btn formBtn btn">Заказать <br> Проект</button>
+			<main class="main anim anim-no-repeat">
+				<div class="container">
+					<h1 class="main__title">Дом <span class="main__titleHighlight">с участком</span> по цене <br> квартиры <span class="main__titleHighlight">в</span> Стерлитамаке!</h1>
+					<div class="main__body">
+						<img class="main__house" src="./img/main/main__house.png">
+						<img src="./img/main/main__cloud.png" alt="" class="main__cloud">
+						<button class="main__btn formBtn btn">
+							Заказать <br> проект
+						</button>
+					</div>
+					<h2 class="main__tagline">Строим теплые дома быстро и по доступной цене!</h2>
 				</div>
-				<h2 class="main__tagline">Строим теплые дома быстро и по доступной цене!</h2>
 				<div class="main__features">
-					<div class="main__featuresItem">
-						<img class="main__featuresItemIcon" src="./img/main/main__feature1.png">
-						<h3 class="main__featuresItemDesc">Строим <br> <span class="main__featuresItemDescHighlight">"под ключ"</span></h3>		
-					</div>
-					<div class="main__featuresItem">
-						<img class="main__featuresItemIcon" src="./img/main/main__feature2.png">
-						<h3 class="main__featuresItemDesc">Ипотека от  <br> <span class="main__featuresItemDescHighlight">ведущик
-							банков</span></h3>		
-					</div>
-					<div class="main__featuresItem">
-						<img class="main__featuresItemIcon" src="./img/main/main__feature3.png">
-						<h3 class="main__featuresItemDesc">Рассрочка <br> <span class="main__featuresItemDescHighlight">без
-							банков</span></h3>		
-					</div>
-					<div class="main__decor">
-						<img class="main__decorRight" src="./img/main/main__decorRight.png">
-						<img class="main__decorLeft" src="./img/main/main__decorLeft.png">
-					</div>
-				</div>
-			</main>
-			<section class="projects">
-				<h2 class="projects__title">Наши проекты</h2>
-				<div class="projects__sizes">
-					<div class="projects__sizesItem">70 кв.м</div>
-					<div class="projects__sizesItem">80 кв.м</div>
-					<div class="projects__sizesItem">90 кв.м</div>
-					<div class="projects__sizesItem">100 кв.м</div>
-					<div class="projects__sizesItem">110 кв.м</div>
-				</div>
-				<div class="projects__sizes">
-					<div class="projects__sizesItem">111 кв.м</div>
-					<div class="projects__sizesItem">112 кв.м</div>
-					<div class="projects__sizesItem">113 кв.м</div>
-					<div class="projects__sizesItem">114 кв.м</div>
-					<div class="projects__sizesItem">115 кв.м</div>
-				</div>
-				<div class="projects__preview">
-					<img class="projects__previewImg" src="./img/projects/projects__preview.png" alt="Проект">
-					<div class="projects__previewDesc">
-						<h4 class="projects__previewDescTitle">Проект</h4>
-						<div class="projects__previewDescPlans">
-							<p class="projects__previewDescPlansTitle">Стандарт 100</p>
-							<p class="projects__previewDescPlansBasic"><b>Базовый</b> - 1 535 000 руб.</p>
-							<p class="projects__previewDescPlansStandart"><b>Стандарт</b> - 1 717 520 руб.</p>
-							<p class="projects__previewDescPlansFull"><b>Под ключ</b> - 2 149 980 руб.</p>
-							<button class="projects__previewDescBtn btn" type="button">Заказать звонок</button>
+					<div class="container">
+						<div class="main__featuresItem">
+							<img class="main__featuresItemIcon" src="./img/main/main__feature1.png">
+							<h3 class="main__featuresItemDesc">Строим <br> <span class="main__featuresItemDescHighlight">"под ключ"</span></h3>		
+						</div>
+						<div class="main__featuresItem">
+							<img class="main__featuresItemIcon" src="./img/main/main__feature2.png">
+							<h3 class="main__featuresItemDesc">Ипотека от  <br> <span class="main__featuresItemDescHighlight">ведущик
+								банков</span></h3>		
+						</div>
+						<div class="main__featuresItem">
+							<img class="main__featuresItemIcon" src="./img/main/main__feature3.png">
+							<h3 class="main__featuresItemDesc">Рассрочка <br> <span class="main__featuresItemDescHighlight">без
+								банков</span></h3>		
+						</div>
+						<div class="main__decor">
+							<img class="main__decorRight" src="./img/main/main__decorRight.png">
+							<img class="main__decorLeft" src="./img/main/main__decorLeft.png">
 						</div>
 					</div>
 				</div>
-				<!-- <div class="projects__gallery">
+			</main>
+			<section class="projects anim anim-no-repeat">
+				<div class="container">
+					<h2 class="projects__title">Наши проекты</h2>
+					<div class="projects__sizes">
+						<div class="projects__sizesItem">70 кв.м</div>
+						<div class="projects__sizesItem">80 кв.м</div>
+						<div class="projects__sizesItem">90 кв.м</div>
+						<div class="projects__sizesItem">100 кв.м</div>
+						<div class="projects__sizesItem">110 кв.м</div>
+						<br>
+						<div class="projects__sizesItem">111 кв.м</div>
+						<div class="projects__sizesItem">112 кв.м</div>
+						<div class="projects__sizesItem">113 кв.м</div>
+						<div class="projects__sizesItem">114 кв.м</div>
+						<div class="projects__sizesItem">115 кв.м</div>
+					</div>
+					<div class="projects__preview">
+						<div class="projects__previewChoose projects__previewChoose0"></div>
+						<div class="projects__previewChoose projects__previewChoose1"></div>
+						<div class="projects__previewChoose projects__previewChoose2"></div>
+						<div class="projects__previewChoose projects__previewChoose3"></div>
+						<div class="projects__previewChoose projects__previewChoose4"></div>
+						<div class="projects__previewChoose projects__previewChoose5"></div>
+						<div class="projects__previewChoose projects__previewChoose6"></div>
+						<div class="projects__previewChoose projects__previewChoose7"></div>
+						<div class="projects__previewChoose projects__previewChoose8"></div>
+						<div class="projects__previewChoose projects__previewChoose9"></div>
+						<img class="projects__previewImg" src="./img/projects/projects__preview0.png" alt="Проект">
+						<div class="projects__previewDesc">
+							<h4 class="projects__previewDescTitle">Проект</h4>
+							<div class="projects__previewDescPlans">
+								<p class="projects__previewDescPlansTitle">Стандарт 100</p>
+								<p class="projects__previewDescPlansBasic"><b>Базовый</b> - 1 535 000 руб.</p>
+								<p class="projects__previewDescPlansStandart"><b>Стандарт</b> - 1 717 520 руб.</p>
+								<p class="projects__previewDescPlansFull"><b>Под ключ</b> - 2 149 980 руб.</p>
+								<button class="projects__previewDescBtn btn" type="button">Заказать звонок</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="projects__gallery">
 					<h2 class="projects__galleryTitle">Предлагаем вам посмотреть наши проекты</h2>
 					<div class="carousel slide projects__gallerySlider"  id="carouselExampleIndicators" data-ride="carousel">
 						<a class="projects__gallerySliderPrev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -143,34 +163,34 @@
 							<img src="./img/projects/projects__slider-right-arrow.png" alt="Вперед">
 						</a>
 					  </div>
-				</div> -->
+				</div>
 			</section>
 
-			<section class="gallery">
+			<section class="gallery anim anim-no-repeat">
 				<div class="gallery__row">
 					<div class="gallery__unselectedImages">
 						<div class="gallery__unselectedImagesRow">
-							<img class="gallery__unselectedImagesItem" src="./img/gallery/gallery__img2.png">
-							<img class="gallery__unselectedImagesItem" src="./img/gallery/gallery__img3.png">
+							<img class="gallery__unselectedImagesItem gallery__img" src="./img/gallery/gallery__img1.png" data-material="wood">
+							<img class="gallery__unselectedImagesItem gallery__img" src="./img/gallery/gallery__img5.png" data-material="rock">
 						</div>
 						<div class="gallery__unselectedImagesRow">
-							<img class="gallery__unselectedImagesItem" src="./img/gallery/gallery__img4.png">
-							<img class="gallery__unselectedImagesItem" src="./img/gallery/gallery__img5.png">
+							<img class="gallery__unselectedImagesItem gallery__img" src="./img/gallery/gallery__img2.png" data-material="wood">
+							<img class="gallery__unselectedImagesItem gallery__img" src="./img/gallery/gallery__img6.png" data-material="rock">
 						</div>
 						<div class="gallery__unselectedImagesRow">
-							<img class="gallery__unselectedImagesItem" src="./img/gallery/gallery__img6.png">
-							<img class="gallery__unselectedImagesItem" src="./img/gallery/gallery__img7.png">
+							<img class="gallery__unselectedImagesItem gallery__img" src="./img/gallery/gallery__img3.png" data-material="wood">
+							<img class="gallery__unselectedImagesItem gallery__img" src="./img/gallery/gallery__img7.png" data-material="rock">
 						</div>
 						<div class="gallery__unselectedImagesRow">
-							<img class="gallery__unselectedImagesItem" src="./img/gallery/gallery__img8.png">
-							<img class="gallery__unselectedImagesItem" src="./img/gallery/gallery__img9.png">
+							<img class="gallery__unselectedImagesItem gallery__img" src="./img/gallery/gallery__img4.png" data-material="wood">
+							<img class="gallery__unselectedImagesItem gallery__img" src="./img/gallery/gallery__img8.png" data-material="rock">
 						</div>
 					</div>
 					<div class="gallery__selectedImage">
-						<img class="gallery__selectedImageItem" src="./img/gallery/gallery__img1.png">
+						<img class="gallery__selectedImageItem gallery__img" src="./img/gallery/gallery__img0.png">
 						<div class="gallery__selectors">
-							<div class="gallery__selectorsRock">Каменные Дома</div>
-							<div class="gallery__selectorsWood">Деревянные Дома</div>
+							<div class="gallery__selectorsRock" data-material="rock">Каменные Дома</div>
+							<div class="gallery__selectorsWood" data-material="wood">Деревянные Дома</div>
 						</div>
 					</div>
 					<div class="gallery__desc">
@@ -213,30 +233,40 @@
 				</div>
 			</section>
 			
-			<section class="features">
-				<div class="features__row">
-					<div class="features__item">
-						<h3 class="features__itemTitle">Готовые дома <br> под ключ</h3>
-						<a href="#" class="features__itemExpand">Подробнее</a>
-						<img class="features__itemIcon features__itemIconKeys" src="./img/features/features__keys.png">
-					</div>
-					<div class="features__item">
-						<h3 class="features__itemTitleEdu features__itemTitle">Кадры с высшим образованием</h3>
-						<a href="#" class="features__itemExpand">Подробнее</a>
-						<img class="features__itemIcon features__itemIconEdu" src="./img/features/features__education.png">
-					</div>
-					<div class="features__item">
-						<h3 class="features__itemTitleGuarant">Гарантия  <br> 10 лет</h3>
-						<a href="#" class="features__itemExpand">Подробнее</a>
-						<img class="features__itemIcon features__itemIconGuarant" src="./img/features/features__guarantee.png">
-					</div>
-					<div class="features__item">
-						<h3 class="features__itemTitleBuild features__itemTitle">Строим как себе!</h3>
-						<a href="#" class="features__itemExpand">Подробнее</a>
-						<img class="features__itemIcon features__itemIconHeart" src="./img/features/features__heart.png">
+			<section class="features anim anim-no-repeat">
+				<div class="container">
+					<div class="features__row">
+						<div class="features__item">
+							<h3 class="features__itemTitle">Готовые дома <br> под ключ</h3>
+							<a href="#" class="features__itemExpand">Подробнее</a>
+							<img class="features__itemIcon features__itemIconKeys" src="./img/features/features__keys.png">
+						</div>
+						<div class="features__item">
+							<h3 class="features__itemTitleEdu features__itemTitle">Кадры с высшим образованием</h3>
+							<a href="#" class="features__itemExpand">Подробнее</a>
+							<img class="features__itemIcon features__itemIconEdu" src="./img/features/features__education.png">
+						</div>
+						<div class="features__item">
+							<h3 class="features__itemTitleGuarant">Гарантия  <br> 10 лет</h3>
+							<a href="#" class="features__itemExpand">Подробнее</a>
+							<img class="features__itemIcon features__itemIconGuarant" src="./img/features/features__guarantee.png">
+						</div>
+						<div class="features__item">
+							<h3 class="features__itemTitleBuild features__itemTitle">Строим как себе!</h3>
+							<a href="#" class="features__itemExpand">Подробнее</a>
+							<img class="features__itemIcon features__itemIconHeart" src="./img/features/features__heart.png">
+						</div>
 					</div>
 				</div>
 			</section>
+
+			<!-- <div class="features-swiper">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">Slide 1</div>
+					<div class="swiper-slide">Slide 2</div>
+					<div class="swiper-slide">Slide 3</div>
+				</div>
+			</div> -->
 		
 			<section class="offer">
 				<h2 class="offer__title">
@@ -256,20 +286,22 @@
 			</section>
 		
 			<section class="feedback">
-				<div class="feedback__row">
-					<img class="feedback__img" src="./img/feedback/feedback__img.png" alt="Ксения">
-					<div class="feedback__review">
-						<h3 class="feedback__reviewName">Ксения</h3>
-						<h4 class="feedback__reviewTown">Стерлитамак</h4>
-						<p class="feedback__reviewText">Накопилось за эти 5 месяцев не мало. Застройка шла отлично,но не без трудностей и маленьких проблем. 
-							Долго подготавливали макетпроекта, не могли определиться, хотели прям что-то минималистическое, наконец подобрали.
-							Далее подготовительные работы, мы купил участок на болотистой местности, не проверив, пришлось подготавливать вначале саму землю. 
-							Как всё это сделали, начался процесс, и сам процесс шёл по времени примерно, как все работы которые я озвучила ранее. 
-							Ребята действительно молодцы, очень быстро и оперативно всё делают. Благодарю компанию Доступный дом, честно, огромный поклон.
-						</p>
-						<a class="feedback__reviewExpand">Посмотреть проект</a>
-						<img class="feedback__reviewUp" src="./img/feedback/feedback__up-arrow.png">
-						<img class="feedback__reviewDown" src="./img/feedback/feedback__up-arrow.png">
+				<div class="container">
+					<div class="feedback__row">
+						<img class="feedback__img" src="./img/feedback/feedback__img.png" alt="Ксения">
+						<div class="feedback__review">
+							<h3 class="feedback__reviewName">Ксения</h3>
+							<h4 class="feedback__reviewTown">Стерлитамак</h4>
+							<p class="feedback__reviewText">Накопилось за эти 5 месяцев не мало. Застройка шла отлично,но не без трудностей и маленьких проблем. 
+								Долго подготавливали макетпроекта, не могли определиться, хотели прям что-то минималистическое, наконец подобрали.
+								Далее подготовительные работы, мы купил участок на болотистой местности, не проверив, пришлось подготавливать вначале саму землю. 
+								Как всё это сделали, начался процесс, и сам процесс шёл по времени примерно, как все работы которые я озвучила ранее. 
+								Ребята действительно молодцы, очень быстро и оперативно всё делают. Благодарю компанию Доступный дом, честно, огромный поклон.
+							</p>
+							<a class="feedback__reviewExpand">Посмотреть проект</a>
+							<img class="feedback__reviewUp" src="./img/feedback/feedback__up-arrow.png">
+							<img class="feedback__reviewDown" src="./img/feedback/feedback__up-arrow.png">
+						</div>
 					</div>
 				</div>
 			</section>
@@ -304,24 +336,27 @@
 						<h3 class="steps__advancedStepsItemTitle">Стройка</h3>
 					</div>
 				</div>
-				<form class="steps__form">
-					<div class="center">
+				<div class="container">
+					<section class="offer">
 						<h2 class="steps__formTitle">
 							Узнайте о типичных ошибках заказчика при строительстве дома
 						</h2>
-					</div>
-					<div class="center">
-						<h3 class="steps__formSubTitle">
+						<h3 class="steps__formSubtitle">
 							Подпишитесь на информационную рассылку
 						</h3>
-					</div>
-					<div class="center">
-						<input class="steps__formEmail input" type="text" placeholder="Ваш Email">
-					</div>
-					<div class="center">
-						<button class="steps__formBtn formBtn btn" type="button">Заказать звонок</button>
-					</div>
-				</form>
+						<form  class="offer__form">
+							<div class="center">
+								<input class="offer__formName input" type="text" placeholder="Ваше Имя">
+							</div>
+							<div class="center">
+								<input class="offer__formPhone input" type="text" placeholder="Ваш Email">
+							</div>
+							<div class="center">
+								<button class="offer__formBtn formBtn btn" type="button">Закажите расчет проекта уже сегодня!</button>
+							</div>
+						</form>
+					</section>
+				</div>
 			</section>
 			
 			<section class="outro">
@@ -331,7 +366,9 @@
 							Прочитать
 						</button>
 					</div>
-					<img class="outro__viewableVideo" src="./img/outro/outro__video.png">
+					<div class="center">
+						<img class="outro__viewableVideo" src="./img/outro/outro__video.png">
+					</div>
 					<div class="outro__viewableDecor"></div>
 				</div>		
 				<div class="outro__readable">
@@ -378,7 +415,7 @@
 			</footer>
 		</div>
 	</div>
-	<!-- <div class="modal__overlay">
+	<div class="modal__overlay">
 		<div class="modal">
 			<form class="modal__form">
 				<h2 class="modal__formTitle">
@@ -404,10 +441,10 @@
 			</form>
 			<div class="modal__close">&times;</div>
 		</div>
-	</div> -->
+	</div>
 
 
-	<script src="js/main.min.js"></script>
+	<script src="./js/main.min.js"></script>
 
 
 </body>
