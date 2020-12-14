@@ -1,1 +1,1113 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"/><link rel="icon" href="/favicon.ico"/><meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="theme-color" content="#000000"/><meta name="description" content="Web site created using create-react-app"/><link rel="apple-touch-icon" href="/logo192.png"/><link rel="manifest" href="/manifest.json"/><title>Доступный Дом</title><link href="/static/css/2.4920a1fe.chunk.css" rel="stylesheet"><link href="/static/css/main.fcb8263b.chunk.css" rel="stylesheet"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"></div><script>!function(e){function t(t){for(var n,a,i=t[0],c=t[1],l=t[2],s=0,p=[];s<i.length;s++)a=i[s],Object.prototype.hasOwnProperty.call(o,a)&&o[a]&&p.push(o[a][0]),o[a]=0;for(n in c)Object.prototype.hasOwnProperty.call(c,n)&&(e[n]=c[n]);for(f&&f(t);p.length;)p.shift()();return u.push.apply(u,l||[]),r()}function r(){for(var e,t=0;t<u.length;t++){for(var r=u[t],n=!0,i=1;i<r.length;i++){var c=r[i];0!==o[c]&&(n=!1)}n&&(u.splice(t--,1),e=a(a.s=r[0]))}return e}var n={},o={1:0},u=[];function a(t){if(n[t])return n[t].exports;var r=n[t]={i:t,l:!1,exports:{}};return e[t].call(r.exports,r,r.exports,a),r.l=!0,r.exports}a.e=function(e){var t=[],r=o[e];if(0!==r)if(r)t.push(r[2]);else{var n=new Promise((function(t,n){r=o[e]=[t,n]}));t.push(r[2]=n);var u,i=document.createElement("script");i.charset="utf-8",i.timeout=120,a.nc&&i.setAttribute("nonce",a.nc),i.src=function(e){return a.p+"static/js/"+({}[e]||e)+"."+{3:"4bf71a69"}[e]+".chunk.js"}(e);var c=new Error;u=function(t){i.onerror=i.onload=null,clearTimeout(l);var r=o[e];if(0!==r){if(r){var n=t&&("load"===t.type?"missing":t.type),u=t&&t.target&&t.target.src;c.message="Loading chunk "+e+" failed.\n("+n+": "+u+")",c.name="ChunkLoadError",c.type=n,c.request=u,r[1](c)}o[e]=void 0}};var l=setTimeout((function(){u({type:"timeout",target:i})}),12e4);i.onerror=i.onload=u,document.head.appendChild(i)}return Promise.all(t)},a.m=e,a.c=n,a.d=function(e,t,r){a.o(e,t)||Object.defineProperty(e,t,{enumerable:!0,get:r})},a.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},a.t=function(e,t){if(1&t&&(e=a(e)),8&t)return e;if(4&t&&"object"==typeof e&&e&&e.__esModule)return e;var r=Object.create(null);if(a.r(r),Object.defineProperty(r,"default",{enumerable:!0,value:e}),2&t&&"string"!=typeof e)for(var n in e)a.d(r,n,function(t){return e[t]}.bind(null,n));return r},a.n=function(e){var t=e&&e.__esModule?function(){return e.default}:function(){return e};return a.d(t,"a",t),t},a.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},a.p="/",a.oe=function(e){throw console.error(e),e};var i=this["webpackJsonpreact-dostupny"]=this["webpackJsonpreact-dostupny"]||[],c=i.push.bind(i);i.push=t,i=i.slice();for(var l=0;l<i.length;l++)t(i[l]);var f=c;r()}([])</script><script src="/static/js/2.b7398eac.chunk.js"></script><script src="/static/js/main.0a310a77.chunk.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+	<meta charset="UTF-8" />
+	
+	<!-- Useful meta tags -->
+	<meta
+		name="viewport"
+		content="width=device-width, initial-scale=1, shrink-to-fit=no"
+	/>
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<meta name="robots" content="index, follow, noodp" />
+	<meta name="googlebot" content="index, follow" />
+	<meta name="google" content="notranslate" />
+	<meta name="format-detection" content="telephone=no" />
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+	<link href="css/main.css" rel="stylesheet" />
+	
+	<title>Доступный Дом</title>
+<body>
+<!-- <div class="modal__overlay">
+	<div class="modal__window">
+		<form class="modal__form">
+			<h2 class="modal__formTitle">
+				Для того что бы получить расчёт перейдите в удобный
+				<b>для вас мессенджер :</b>
+			</h2>
+			<div class="modal__formMessengers">
+				<img class="modal__formMessengersItem" src="{telegram}" />
+				<img class="modal__formMessengersItem" src="{whatsapp}" />
+			</div>
+			<h3 class="modal__formSubtitle">
+				Или же введите номер телефона для получения прайса в любом удобном для
+				вас мессенджере
+			</h3>
+			<div class="modal__formRow">
+				<label class="modal__formNameLabel">имя</label>
+				<input class="modal__formName" type="text" />
+				<label class="modal__formPhoneLabel">телефон</label>
+				<input class="modal__formPhone" type="text" />
+				<button class="modal__formBtn formBtn btn" onClick="{onSubmit}">
+					Получить расчет <br />
+					проекта уже сегодня
+				</button>
+			</div>
+		</form>
+		<div class="modal__close">×</div>
+	</div>
+</div> -->
+<div class="modal"></div>
+<header class="header" data-aos="fade-up">
+		<div class="container" style="display: flex; flex-wrap: wrap">
+				<a class="header__logo" href="./">
+					<img
+						class="header__logoImg "
+						src="./img/header/header__logo.png"
+						alt="Логотип"
+						data-aos="slide-right"
+						data-aos-delay="500"
+					/>
+				</a>
+	
+				<nav class="header__nav" data-aos="slide-right"
+						data-aos-delay="700">
+					<ul class="header__menu">
+						<li class="header__menuItem">
+							<a class="header__menuLink" href="./"> Главная </a>
+						</li>
+						<li class="header__menuItem">
+							<a class="header__menuLink" href="./"> Наши проекты </a>
+						</li>
+						<li class="header__menuItem">
+							<a class="header__menuLink" href="./"> Отзывы </a>
+						</li>
+						<li class="header__menuItem">
+							<a class="header__menuLink" href="./"> Этапы работ </a>
+						</li>
+					</ul>
+				</nav>
+		
+			<div class="header__contacts"  data-aos="slide-left"
+						data-aos-delay="1000">
+				<div class="header__contactsAddress">
+					Стерлитамак, <br />
+					ул. Профсоюзная 2к1
+				</div>
+				<a class="header__contactsCall" href="tel:79659219000">
+					<div class="header__contactsPhone">
+					<h4 class="header__contactsPhoneText">8-965-921-9000</h4>
+					<h5 class="header__contactsPhoneFreecall">Бесплатный звонок!</h5>
+				</div>
+				</a>
+			</div>
+		</div>
+	</header>
+</div>
+<main
+	class="main anim anim-no-repeat"
+	data-aos="fade-up"
+	data-aos-offset="200"
+	data-aos-delay="50"
+	data-aos-duration="1000"
+	data-aos-easing="ease-in-out"
+	data-aos-mirror="true"
+	data-aos-once="false"
+>
+	<div class="container">
+		<h1 class="main__title">
+			Дом <span class="main__titleHighlight">с участком</span> по цене <br />
+			квартиры <span class="main__titleHighlight">в</span>
+			Стерлитамаке!
+		</h1>
+		<div class="main__body">
+			<img
+				class="main__house"
+				src="./img/main/main__house.png"
+				data-aos="slide-down"
+				data-aos-delay="500"
+				data-aos-duration="1000"
+			/>
+
+			<img
+				src="./img/main/main__cloud.png"
+				alt=""
+				class="main__cloud"
+				data-aos="slide-down"
+				data-aos-delay="100"
+			/>
+
+			<button class="main__btn formBtn btn">
+				Заказать <br />
+				проект
+			</button>
+			<!-- <img class="btn__flare" src="./img/btn__flare.png" /> -->
+		</div>
+		<h2 class="main__tagline">
+			Строим теплые дома быстро и по доступной цене!
+		</h2>
+	</div>
+
+	<div class="main__features">
+		<div class="container">
+			<div
+				class="main__featuresItem"
+				data-aos="slide-right"
+				data-aos-delay="300"
+				data-aos-duration="500"
+			>
+				<img
+					class="main__featuresItemIcon"
+					src="./img/main/main__feature1.png"
+				/>
+				<h3 class="main__featuresItemDesc">
+					Строим <br />
+					<span class="main__featuresItemDescHighlight"> "под ключ" </span>
+				</h3>
+			</div>
+			<div
+				class="main__featuresItem"
+				data-aos="slide-up"
+				data-aos-delay="500"
+				data-aos-duration="200"
+			>
+				<img
+					class="main__featuresItemIcon"
+					src="./img/main/main__feature2.png"
+				/>
+				<h3 class="main__featuresItemDesc">
+					Ипотека от <br />
+					<span class="main__featuresItemDescHighlight"> ведущик банков </span>
+				</h3>
+			</div>
+			<div
+				class="main__featuresItem"
+				data-aos="slide-left"
+				data-aos-delay="300"
+				data-aos-duration="500"
+			>
+				<img
+					class="main__featuresItemIcon"
+					src="./img/main/main__feature3.png"
+				/>
+				<h3 class="main__featuresItemDesc">
+					Рассрочка <br />
+					<span class="main__featuresItemDescHighlight"> без банков </span>
+				</h3>
+			</div>
+			<div class="main__decor">
+				<img
+					class="main__decorRight"
+					src="./img/main/main__decorRight.png"
+					data-aos="fade-left"
+					data-aos-delay="700"
+					data-aos-duration="1000"
+				/>
+				<img
+					class="main__decorLeft"
+					src="./img/main/main__decorLeft.png"
+					data-aos="fade-right"
+					data-aos-delay="800"
+					data-aos-duration="1200"
+				/>
+			</div>
+		</div>
+	</div>
+</main>
+<section class="projects anim anim-no-repeat" data-aos="fade-right">
+	<div class="container">
+		<h2 class="projects__title">Наши проекты</h2>
+		<div class="row">
+			<div class="projects__sizes">
+				<div class="projects__sizesItem" data-id="0">70 кв.м</div>
+				<div class="projects__sizesItem" data-id="1">111 кв.м</div>
+			</div>
+			<div class="projects__sizes">
+				<div class="projects__sizesItem" data-id="2">80 кв.м</div>
+				<div class="projects__sizesItem" data-id="3">112 кв.м</div>
+			</div>
+
+			<div class="projects__sizes">
+				<div class="projects__sizesItem" data-id="4">90 кв.м</div>
+				<div class="projects__sizesItem" data-id="5">113 кв.м</div>
+			</div>
+			<div class="projects__sizes">
+				<div class="projects__sizesItem" data-id="6">100 кв.м</div>
+				<div class="projects__sizesItem" data-id="7">114 кв.м</div>
+			</div>
+
+			<div class="projects__sizes">
+				<div class="projects__sizesItem" data-id="8">110 кв.м</div>
+				<div class="projects__sizesItem" data-id="9">115 кв.м</div>
+			</div>
+		</div>
+		<div class="projects__preview">
+			<div
+				class="projects__previewChoose projects__previewChoose0"
+				data-id="0"
+			></div>
+			<div
+				class="projects__previewChoose projects__previewChoose1"
+				data-id="1"
+			></div>
+			<div
+				class="projects__previewChoose projects__previewChoose2"
+				data-id="2"
+			></div>
+			<div
+				class="projects__previewChoose projects__previewChoose3"
+				data-id="3"
+			></div>
+			<div
+				class="projects__previewChoose projects__previewChoose4"
+				data-id="4"
+			></div>
+			<div
+				class="projects__previewChoose projects__previewChoose5"
+				data-id="5"
+			></div>
+			<div
+				class="projects__previewChoose projects__previewChoose6"
+				data-id="6"
+			></div>
+			<div
+				class="projects__previewChoose projects__previewChoose7"
+				data-id="7"
+			></div>
+			<div
+				class="projects__previewChoose projects__previewChoose8"
+				data-id="8"
+			></div>
+			<div
+				class="projects__previewChoose projects__previewChoose9"
+				data-id="9"
+			></div>
+			<img
+				class="projects__previewImg"
+				src="./img/projects/projects__preview0.png"
+				alt="Проект"
+				data-id="0"
+			/>
+			<div class="projects__previewDesc">
+				<h4 class="projects__previewDescTitle">Проект</h4>
+				<div class="projects__previewDescPlans">
+					<p class="projects__previewDescPlansTitle">Стандарт 100</p>
+					<p class="projects__previewDescPlansBasic">
+						<b>Базовый</b> - 1 535 000 руб.
+					</p>
+					<p class="projects__previewDescPlansStandart">
+						<b>Стандарт</b> - 1 717 520 руб.
+					</p>
+					<p class="projects__previewDescPlansFull">
+						<b>Под ключ</b> - 2 149 980 руб.
+					</p>
+					<Pulse>
+						<button class="projects__previewDescBtn btn" type="button">
+							Заказать звонок
+						</button>
+					</Pulse>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="mobileProjects anim anim-no-repeat">
+	<div class="container">
+		<h2 class="projects__title">Наши проекты</h2>
+		<div class="row">
+			<div class="projects__sizes">
+				<div class="projects__sizesItem" data-id="0">70 кв.м</div>
+				<div class="projects__sizesItem" data-id="1">111 кв.м</div>
+				<div class="projects__sizesItem" data-id="2">90 кв.м</div>
+				<div class="projects__sizesItem" data-id="3">113 кв.м</div>
+				<div class="projects__sizesItem" data-id="4">110 кв.м</div>
+			</div>
+			<div class="projects__sizes">
+				<div class="projects__sizesItem" data-id="5">80 кв.м</div>
+				<div class="projects__sizesItem" data-id="6">112 кв.м</div>
+				<div class="projects__sizesItem" data-id="7">114 кв.м</div>
+				<div class="projects__sizesItem" data-id="8">114 кв.м</div>
+				<div class="projects__sizesItem" data-id="9">115 кв.м</div>
+			</div>
+		</div>
+		<div class="projects__preview">
+			<div class="projects__previewDesc">
+				<h4 class="projects__previewDescTitle">Проект</h4>
+				<div class="projects__previewDescPlans">
+					<p class="projects__previewDescPlansTitle">Стандарт 100</p>
+					<p class="projects__previewDescPlansBasic">
+						<b>Базовый</b> - 1 535 000 руб.
+					</p>
+					<p class="projects__previewDescPlansStandart">
+						<b>Стандарт</b> - 1 717 520 руб.
+					</p>
+					<p class="projects__previewDescPlansFull">
+						<b>Под ключ</b> - 2 149 980 руб.
+					</p>
+					<button
+						class="projects__previewDescBtn btn"
+						type="button"
+						onClick="{props.openModal}"
+					>
+						Заказать звонок
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="gallery anim anim-no-repeat" data-aos="fade-left">
+	<div class="gallery__row">
+		<SlideInLeft>
+			<div class="gallery__unselectedImages">
+				<div class="gallery__unselectedImagesRow">
+					<img
+						class="gallery__unselectedImagesItem gallery__img"
+						src="./img/gallery/gallery__img1.png"
+						data-id="1"
+						data-material="wood"
+						data-aos="zoom-out"
+						data-aos-delay="400"
+					/>
+					<img
+						class="gallery__unselectedImagesItem gallery__img"
+						src="./img/gallery/gallery__img2.png"
+						data-id="2"
+						data-material="wood"
+						data-aos="zoom-out"
+						data-aos-delay="450"
+					/>
+					<img
+						class="gallery__unselectedImagesItem gallery__img"
+						src="./img/gallery/gallery__img3.png"
+						data-id="3"
+						data-material="wood"
+						data-aos="zoom-out"
+						data-aos-delay="500"
+					/>
+					<img
+						class="gallery__unselectedImagesItem gallery__img"
+						src="./img/gallery/gallery__img4.png"
+						data-id="4"
+						data-material="wood"
+						data-aos="zoom-out"
+						data-aos-delay="550"
+					/>
+				</div>
+				<div class="gallery__unselectedImagesRow">
+					<img
+						class="gallery__unselectedImagesItem gallery__img"
+						src="./img/gallery/gallery__img5.png"
+						data-id="5"
+						data-material="rock"
+						data-aos="zoom-out"
+						data-aos-delay="600"
+					/>
+					<img
+						class="gallery__unselectedImagesItem gallery__img"
+						src="./img/gallery/gallery__img6.png"
+						data-id="6"
+						data-material="rock"
+						data-aos="zoom-out"
+						data-aos-delay="650"
+					/>
+					<img
+						class="gallery__unselectedImagesItem gallery__img"
+						src="./img/gallery/gallery__img7.png"
+						data-id="7"
+						data-material="rock"
+						data-aos="zoom-out"
+						data-aos-delay="700"
+					/>
+					<img
+						class="gallery__unselectedImagesItem gallery__img"
+						src="./img/gallery/gallery__img8.png"
+						data-id="8"
+						data-material="rock"
+						data-aos="zoom-out"
+						data-aos-delay="750"
+					/>
+				</div>
+			</div>
+		</SlideInLeft>
+		<div class="gallery__selectedImage">
+			<img
+				class="gallery__selectedImageItem gallery__img"
+				src="./img/gallery/gallery__img0.png"
+				data-id="0"
+				data-aos="zoom-in"
+				data-aos-delay="200"
+			/>
+			<div class="gallery__selectors">
+				<div class="gallery__selectorsRock" data-material="rock">
+					Каменные Дома
+				</div>
+				<div class="gallery__selectorsWood" data-material="wood">
+					Деревянные Дома
+				</div>
+			</div>
+		</div>
+		<ZoomInRight>
+			<div class="gallery__desc">
+				<div class="gallery__descRow">
+					<div class="gallery__descWorks">
+						<h3 class="gallery__descWorksTitle">Состав работ :</h3>
+						<p class="gallery__descWorksText">
+							Проектирование, <br />
+							поставка материалы, <br />
+							строительство под ключ <br />
+						</p>
+					</div>
+					<div class="gallery__descWorks">
+						<h3 class="gallery__descWorksTitle">Квадратура :</h3>
+						<p class="gallery__descWorksText">204 кв/м</p>
+					</div>
+				</div>
+				<div class="gallery__descRow">
+					<div class="gallery__descWorks">
+						<h3 class="gallery__descWorksTitle">Материалы :</h3>
+						<p class="gallery__descWorksText">
+							Материал 1, <br />
+							материал 2, <br />
+							материал 3 <br />
+						</p>
+					</div>
+					<div class="gallery__descWorksDeadline">
+						<h3 class="gallery__descWorksTitle">Сроки :</h3>
+						<p class="gallery__descWorksText">2 месяца</p>
+					</div>
+				</div>
+				<div class="center">
+					<Pulse>
+						<button class="gallery__descBtn btn" onClick="{props.openModal}">
+							Скачать проект
+						</button>
+					</Pulse>
+				</div>
+			</div>
+		</ZoomInRight>
+	</div>
+</section>
+
+<section class="mobileGallery">
+	<div class="swiper-container">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide">
+				<img
+					class="gallery__unselectedImagesItem"
+					src="./img/gallery/gallery__img1.png"
+					data-material="wood"
+				/>
+				<img
+					class="gallery__unselectedImagesItem"
+					src="./img/gallery/gallery__img2.png"
+					data-material="rock"
+				/>
+
+				<img
+					class="gallery__unselectedImagesItem"
+					src="./img/gallery/gallery__img3.png"
+					data-material="wood"
+				/>
+			</div>
+			<div class="swiper-slide">
+				<img
+					class="gallery__unselectedImagesItem"
+					src="./img/gallery/gallery__img4.png"
+					data-material="rock"
+				/>
+				<img
+					class="gallery__unselectedImagesItem"
+					src="./img/gallery/gallery__img5.png"
+					data-material="wood"
+				/>
+				<img
+					class="gallery__unselectedImagesItem"
+					src="./img/gallery/gallery__img6.png"
+					data-material="rock"
+				/>
+			</div>
+			<div class="swiper-slide">
+				<img
+					class="gallery__unselectedImagesItem"
+					src="./img/gallery/gallery__img7.png"
+					data-material="wood"
+				/>
+				<img
+					class="gallery__unselectedImagesItem"
+					src="./img/gallery/gallery__img8.png"
+					data-material="rock"
+				/>
+				<img
+					class="gallery__unselectedImagesItem"
+					src="./img/gallery/gallery__img0.png"
+					data-material="rock"
+				/>
+			</div>
+		</div>
+	</div>
+	<div class="gallery__selectedImage">
+		<img
+			class="gallery__selectedImageItem gallery__img"
+			src="./img/gallery/gallery__img0.png"
+		/>
+		<div class="gallery__selectors">
+			<div
+				class="gallery__selectorsRock gallery__selectorsActive"
+				data-material="rock"
+			>
+				Каменные <br />
+				Дома
+			</div>
+			<div class="gallery__selectorsWood" data-material="wood">
+				Деревянные <br />
+				Дома
+			</div>
+		</div>
+	</div>
+
+	<div class="center">
+		<div class="gallery__desc">
+			<div class="gallery__descRow">
+				<div class="gallery__descWorks">
+					<h3 class="gallery__descWorksTitle">Состав работ :</h3>
+					<p class="gallery__descWorksText">
+						Проектирование, <br />
+						поставка материалы, <br />
+						строительство под ключ <br />
+					</p>
+				</div>
+				<div class="gallery__descWorks">
+					<h3 class="gallery__descWorksTitle">Квадратура :</h3>
+					<p class="gallery__descWorksText">204 кв/м</p>
+				</div>
+			</div>
+			<div class="gallery__descRow">
+				<div class="gallery__descWorks">
+					<h3 class="gallery__descWorksTitle">Материалы :</h3>
+					<p class="gallery__descWorksText">
+						Материал 1, <br />
+						материал 2, <br />
+						материал 3 <br />
+					</p>
+				</div>
+				<div class="gallery__descWorksDeadline">
+					<h3 class="gallery__descWorksTitle">Сроки :</h3>
+					<p class="gallery__descWorksText">2 месяца</p>
+				</div>
+			</div>
+			<div class="center">
+				<button class="gallery__descBtn btn">Скачать проект</button>
+			</div>
+		</div>
+	</div>
+</section>
+<section
+	class="features anim anim-no-repeat"
+	data-aos="zoom-in"
+	data-aos-delay="200"
+>
+	<div class="container">
+		<div class="features__row">
+			<div class="features__item">
+				<h3 class="features__itemTitle">
+					Готовые дома <br />
+					под ключ
+				</h3>
+				<a href="#" class="features__itemExpand"> Подробнее </a>
+				<img
+					class="features__itemIcon features__itemIconKeys"
+					src="./img/features/features__keys.png"
+				/>
+			</div>
+			<div class="features__item">
+				<h3 class="features__itemTitleEdu features__itemTitle">
+					Кадры с высшим образованием
+				</h3>
+				<a href="#" class="features__itemExpand"> Подробнее </a>
+				<img
+					class="features__itemIcon features__itemIconEdu"
+					src="./img/features/features__education.png"
+				/>
+			</div>
+			<div class="features__item">
+				<h3 class="features__itemTitleGuarant">
+					Гарантия <br />
+					10 лет
+				</h3>
+				<a href="#" class="features__itemExpand"> Подробнее </a>
+				<img
+					class="features__itemIcon features__itemIconGuarant"
+					src="./img/features/features__guarantee.png"
+				/>
+			</div>
+			<div class="features__item">
+				<h3 class="features__itemTitleBuild features__itemTitle">
+					Строим как себе!
+				</h3>
+				<a href="#" class="features__itemExpand"> Подробнее </a>
+				<img
+					class="features__itemIcon features__itemIconHeart"
+					src="./img/features/features__heart.png"
+				/>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="mobileFeatures">
+	<div class="swiper-container">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide">
+				<div class="features__item">
+					<h3 class="features__itemTitle">
+						Готовые дома <br />
+						под ключ
+					</h3>
+					<a href="#" class="features__itemExpand"> Подробнее </a>
+					<img
+						class="features__itemIcon features__itemIconKeys"
+						src="./img/features/features__keys.png"
+					/>
+				</div>
+			</div>
+			<div class="swiper-slide">
+				<div class="features__item">
+					<h3 class="features__itemTitle">Кадры с высшим образованием</h3>
+					<a href="#" class="features__itemExpand"> Подробнее </a>
+					<img
+						class="features__itemIcon features__itemIconKeys"
+						src="./img/features/features__education.png"
+					/>
+				</div>
+			</div>
+			<div class="swiper-slide">
+				<div class="features__item">
+					<h3 class="features__itemTitle">
+						Гарантия <br />
+						10 лет
+					</h3>
+					<a href="#" class="features__itemExpand"> Подробнее </a>
+					<img
+						class="features__itemIcon features__itemIconKeys"
+						src="./img/features/features__guarantee.png"
+					/>
+				</div>
+			</div>
+			<div class="swiper-slide">
+				<div class="features__item">
+					<h3 class="features__itemTitle">Строим как себе!</h3>
+					<a href="#" class="features__itemExpand"> Подробнее </a>
+					<img
+						class="features__itemIcon features__itemIconKeys"
+						src="./img/features/features__heart.png"
+					/>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="offer" data-aos="zoom-out" data-aos-delay="300">
+	<h2 class="offer__title">Закажите расчет проекта уже сегодня!</h2>
+	<form class="offer__form">
+		<div class="center">
+			<input class="offer__formName input" type="text" placeholder="Ваше Имя" />
+		</div>
+		<div class="center">
+			<input
+				class="offer__formPhone input"
+				type="text"
+				placeholder="Ваш Номер"
+			/>
+		</div>
+		<div class="center">
+			<Pulse>
+				<button
+					class="btn offer__formBtn"
+					style="text-transform: none; height: 60px"
+					type="button"
+				>
+					Закажите расчет проекта уже сегодня!
+				</button>
+			</Pulse>
+		</div>
+	</form>
+</section>
+<section class="feedback" data-aos="slide-up" data-aos-delay="400">
+	<div class="container">
+		<div class="feedback__row">
+			<img
+				class="feedback__img"
+				src="./img/feedback/feedback__img.png"
+				alt="Ксения"
+			/>
+			<div class="feedback__review">
+				<h3 class="feedback__reviewName">Ксения</h3>
+				<h4 class="feedback__reviewTown">Стерлитамак</h4>
+				<p class="feedback__reviewText">
+					Накопилось за эти 5 месяцев не мало. Застройка шла отлично,но не без
+					трудностей и маленьких проблем. Долго подготавливали макетпроекта, не
+					могли определиться, хотели прям что-то минималистическое, наконец
+					подобрали. Далее подготовительные работы, мы купил участок на
+					болотистой местности, не проверив, пришлось подготавливать вначале
+					саму землю. Как всё это сделали, начался процесс, и сам процесс шёл по
+					времени примерно, как все работы которые я озвучила ранее. Ребята
+					действительно молодцы, очень быстро и оперативно всё делают. Благодарю
+					компанию Доступный дом, честно, огромный поклон.
+				</p>
+				<a class="feedback__reviewExpand">Посмотреть проект</a>
+				<img
+					class="feedback__reviewUp"
+					src="./img/feedback/feedback__up-arrow.png"
+				/>
+				<img
+					class="feedback__reviewDown"
+					src="./img/feedback/feedback__up-arrow.png"
+				/>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="mobileFeedback">
+	<div class="swiper-container">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide">
+				<div class="container">
+					<div class="mobileFeedback__top">
+						<img
+							class="mobileFeedback__topImg"
+							src="./img/feedback/feedback__img.png"
+						/>
+						<div class="mobileFeedback__topInfo">
+							<h3 class="mobileFeedbackName feedback__reviewName">Ксения</h3>
+							<h4 class="mobileFeedbackTown feedback__reviewTown">
+								Стерлитамак
+							</h4>
+							<div class="mobileFeedback__topNav">
+								<img
+									class="mobileFeedback__topArrowLeft"
+									src="./img/feedback/feedback__up-arrow.png"
+								/>
+								<img
+									class="mobileFeedback__topArrowRight"
+									src="./img/feedback/feedback__up-arrow.png"
+								/>
+							</div>
+						</div>
+					</div>
+					<div class="mobileFeedback__body">
+						<p class="mobileFeedback__text feedback__reviewText">
+							Накопилось за эти 5 месяцев не мало. Застройка шла отлично,но не
+							без трудностей и маленьких проблем. Долго подготавливали
+							макетпроекта, не могли определиться, хотели прям что-то
+							минималистическое, наконец подобрали. Далее подготовительные
+							работы, мы купил участок на болотистой местности, не проверив,
+							пришлось подготавливать вначале саму землю. Как всё это сделали,
+							начался процесс, и сам процесс шёл по времени примерно, как все
+							работы которые я озвучила ранее. Ребята действительно молодцы,
+							очень быстро и оперативно всё делают. Благодарю компанию Доступный
+							дом, честно, огромный поклон.
+						</p>
+					</div>
+					<div class="mobileFeedback__bottom feedback__reviewExpand">
+						Посмотреть проект
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="steps">
+	<h2 class="steps__title">Этапы работы</h2>
+	<SlideInRight>
+		<div class="steps__basicSteps">
+			<div
+				class="steps__basicStepsItem"
+				data-aos="slide-right"
+				data-aos-delay="200"
+			>
+				<img
+					class="steps__basicStepsItemIcon"
+					src="./img/steps/steps__qa.png"
+				/>
+				<h3 class="steps__basicStepsItemTitle">
+					Обсуждение <br />
+					Проекта
+				</h3>
+			</div>
+			<div
+				class="steps__basicStepsItem"
+				data-aos="slide-down"
+				data-aos-delay="700"
+				data-aos-duration="100"
+			>
+				<img
+					class="steps__basicStepsItemIcon"
+					src="./img/steps/steps__process.png"
+				/>
+				<h3 class="steps__basicStepsItemTitle">
+					Разработка <br />
+					Планировки
+				</h3>
+			</div>
+			<div
+				class="steps__basicStepsItem"
+				data-aos="slide-left"
+				data-aos-delay="250"
+			>
+				<img
+					class="steps__basicStepsItemIcon"
+					src="./img/steps/steps__economy-forecast.png"
+				/>
+				<h3 class="steps__basicStepsItemTitle">
+					Составление <br />
+					Сметы
+				</h3>
+			</div>
+		</div>
+		<div class="steps__advancedSteps">
+			<div
+				class="steps__advancedStepsItem"
+				data-aos="slide-right"
+				data-aos-delay="350"
+			>
+				<img
+					class="steps__advancedStepsItemIcon"
+					src="./img/steps/steps__contract.png"
+				/>
+				<h3 class="steps__advancedStepsItemTitle">
+					Заключаем <br />
+					Договор
+				</h3>
+			</div>
+			<div
+				class="steps__advancedStepsItem"
+				style="min-width: 500px"
+				data-aos="slide-up"
+				data-aos-duration="200"
+			>
+				<img
+					class="steps__advancedStepsItemIcon"
+					src="./img/steps/steps__sketch.png"
+				/>
+				<h3 class="steps__advancedStepsItemTitle">
+					Подготовительные <br />
+					Строительные <br />
+					Работы
+				</h3>
+			</div>
+			<div
+				class="steps__advancedStepsItem"
+				data-aos="slide-left"
+				data-aos-delay="300"
+			>
+				<img
+					class="steps__advancedStepsItemIcon"
+					src="./img/steps/steps__construction.png"
+				/>
+				<h3 class="steps__advancedStepsItemTitle">Стройка</h3>
+			</div>
+		</div>
+	</SlideInRight>
+	<div class="container">
+		<section class="offer" data-aos="flip-up" data-aos-delay="500">
+			<h2 class="steps__formTitle">
+				Узнайте о типичных ошибках заказчика при строительстве дома
+			</h2>
+			<h3 class="steps__formSubtitle">
+				Подпишитесь на информационную рассылку
+			</h3>
+			<form class="offer__form">
+				<div class="center">
+					<input
+						class="offer__formEmail input"
+						type="text"
+						placeholder="Ваш Email"
+					/>
+				</div>
+				<div class="center">
+					<Pulse>
+						<button class="offer__formBtn formBtn btn" type="button">
+							Заказать звонок
+						</button>
+					</Pulse>
+				</div>
+			</form>
+		</section>
+	</div>
+</section>
+
+<section class="mobileSteps">
+	<h2 class="steps__title">Этапы работы</h2>
+	<div class="swiper-container">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide">
+				<div class="steps__basicStepsItem">
+					<img
+						class="steps__basicStepsItemIcon"
+						src="./img/steps/steps__qa.png"
+					/>
+					<h3 class="steps__basicStepsItemTitle">
+						Обсуждение <br />
+						Проекта
+					</h3>
+				</div>
+			</div>
+			<div class="swiper-slide">
+				<div class="steps__basicStepsItem">
+					<img
+						class="steps__basicStepsItemIcon"
+						src="./img/steps/steps__process.png"
+					/>
+					<h3 class="steps__basicStepsItemTitle">
+						Разработка <br />
+						Планировки
+					</h3>
+				</div>
+			</div>
+			<div class="swiper-slide">
+				<div class="steps__basicStepsItem">
+					<img
+						class="steps__basicStepsItemIcon"
+						src="./img/steps/steps__economy-forecast.png"
+					/>
+					<h3 class="steps__basicStepsItemTitle">
+						Составление <br />
+						Сметы
+					</h3>
+				</div>
+			</div>
+			<div class="swiper-slide">
+				<div class="steps__advancedStepsItem">
+					<img
+						class="steps__advancedStepsItemIcon"
+						src="./img/steps/steps__sketch.png"
+					/>
+					<h3 class="steps__advancedStepsItemTitle">
+						Подготовительные <br />
+						Строительные <br />
+						Работы
+					</h3>
+				</div>
+			</div>
+			<div class="swiper-slide">
+				<div class="steps__advancedStepsItem">
+					<img
+						class="steps__advancedStepsItemIcon"
+						src="./img/steps/steps__construction.png"
+					/>
+					<h3 class="steps__advancedStepsItemTitle">Стройка</h3>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<section class="offer">
+			<h2 class="steps__formTitle">
+				Узнайте о типичных ошибках заказчика при строительстве дома
+			</h2>
+			<h3 class="steps__formSubtitle">
+				Подпишитесь на информационную рассылку
+			</h3>
+			<form class="offer__form">
+				<div class="center">
+					<input
+						class="offer__formEmail input"
+						type="text"
+						placeholder="Ваш Email"
+					/>
+				</div>
+				<div class="center">
+					<button
+						class="offer__formBtn formBtn btn"
+						type="button"
+						onClick="{props.openModal}"
+					>
+						Заказать звонок
+					</button>
+				</div>
+			</form>
+		</section>
+	</div>
+</section>
+<section class="outro">
+	<div class="container">
+		<div class="outro__viewable">
+			<div class="center">
+				<button
+					class="outro__viewableTitle"
+					data-aos="zoom-in"
+					data-aos-delay="900"
+					data-aos-duration="500"
+				>
+					Прочитать
+				</button>
+			</div>
+			<div class="center">
+				<img
+					class="outro__viewableVideo"
+					src="./img/outro/outro__video.png"
+					data-aos="zoom-in"
+					data-aos-delay="300"
+				/>
+			</div>
+			<img
+				class="outro__viewablePlay"
+				src="./img/outro/outro__play.png"
+				data-aos="zoom-out"
+				data-aos-delay="600"
+			/>
+			<img
+				class="outro__viewableDecor"
+				src="./img/outro/outro__key.png"
+				data-aos="slide-right"
+				data-aos-delay="350"
+			/>
+		</div>
+		<div class="outro__readable">
+			<h2 class="outro__title">Строительство домов под ключ</h2>
+			<p class="outro__text">
+				Мы строим под ключ комфортные дома и коттеджи в Стерлитамаке, и сдаем их
+				заказчикам готовыми к проживанию. Мы познакомим вас с технологиями и
+				материалами, которые используем в строительстве загородных домов. Вы
+				узнаете все об их преимуществах, особенностях и важных нюансах.
+			</p>
+			<h2 class="outro__title">
+				Строительство коттеджей под ключ в Стерлитамаке
+			</h2>
+			<p class="outro__text">
+				За время работы мы построили и сдали заказчикам более 800 готовых для
+				заселения домов. Мы строим загородные коттеджи по европейской
+				технологии, соблюдая все требования СНиП и ГОСТ, заботимся о здоровье
+				клиентов и применяем только сертифицированные, экологически безопасные
+				материалы, не выделяющие формальдегиды.
+			</p>
+			<p class="outro__text">
+				Мы самостоятельно изготавливаем деревянные, металлические и
+				железобетонные конструкции для каркасных домов на производственных
+				площадках. У нас большой автопарк строительной техники и в наличии
+				механизированное оборудование. В нашей компании работают талантливые
+				инженеры, дизайнеры, и опытные мастера.
+			</p>
+			<p class="outro__text">
+				На каждом этапе работают специализированные бригады. Благодаря
+				комплексному подходу к строительству домов, мы снижаем затраты и
+				предлагаем клиентам невысокие цены.
+			</p>
+		</div>
+	</div>
+</section>
+<footer class="footer">
+	<div class="footer__info">
+		<div class="footer__contacts">
+			<div class="footer__contactsAddress">
+				Стерлитамак, <br />
+				ул. Профсоюзная 2к1
+			</div>
+			<div class="footer__contactsPhone">8-965-921-9000</div>
+			<h3 class="footer__contactsTagline">Уже работаем!</h3>
+		</div>
+		<img class="footer__logo" src="./img/logo.png" alt="Логотип" />
+	</div>
+	<div class="footer__id">ООО ТЁПЛЫЙ ДОМ ИНН/ОГРН 12345678/12345678</div>
+</footer>
+<script src="js/main.js"></script>
+ <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+ <script>AOS.init();</script>
+</body>
+</html>
