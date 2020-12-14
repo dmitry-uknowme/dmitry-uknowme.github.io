@@ -4851,9 +4851,17 @@ for (var i = 0; i < unselectedImages.length; i++) {
     // 	e.target.getAttribute('data-material')
     // );
 
-    updateStorage(index);
-    console.log(localStorage.getItem('listenedIndexes')[localStorage.getItem('listenedIndexes').length - 1]);
-    e.target.setAttribute('src', unselectedImages[localStorage.getItem('listenedIndexes').length - 1].getAttribute('src'));
+    updateStorage(index); // console.log(
+    // 	localStorage.getItem('listenedIndexes')[
+    // 		localStorage.getItem('listenedIndexes').length - 1
+    // 	]
+    // );
+    // e.target.setAttribute(
+    // 	'src',
+    // 	unselectedImages[
+    // 		localStorage.getItem('listenedIndexes').length - 1
+    // 	].getAttribute('src')
+    // );
   });
 }
 
