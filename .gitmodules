@@ -1,0 +1,3 @@
+[submodule "game_rogue"]
+	path = game_rogue
+	url = https://github.com/dmitry-uknowme/game_rogue
